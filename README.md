@@ -72,7 +72,6 @@ in the root, you will get
 - `snapshot.csv` contains snapshot of statistics info
 
 ### results
-
 In wb-results, we provide compressed all statistics and snapshot files, i.e., 30 runs with MIO and Random using 100000 HTTP calls as search budget.
 
 
