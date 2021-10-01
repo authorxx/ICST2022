@@ -14,6 +14,28 @@ gqlbbAll: contains all the automatically generated files including logs, reports
 
 analyze.R: an R script to analyze results and generate table and figures in the paper.
 
+Quick build and run:
+
+Step 1. In this repo, we provide a python script.
+
+Go to the root, run
+
+python exp.py no 1000 bbgqlicst 1 1 1000 400 12 no
+
+Step 2. After the execution is done, you will see a folder named bbgqlicst. Go to bbgqlicst and run:
+
+./runall.sh
+
+Step 3. After the execution is done, you will see repositories named:
+
+logs: containing all the generated logs,
+
+reports: containing all the generated statistics,
+
+scripts: containing all the generated scripts,
+
+tests: containing the automatically generated tests for the twelve apis presented in the paper for the black-Box mode.
+
 
 For white-box experiments:
 
