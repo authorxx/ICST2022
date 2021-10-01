@@ -1,0 +1,30 @@
+* [34m
+ _____          ___  ___          _
+|  ___|         |  \/  |         | |
+| |____   _____ | .  . | __ _ ___| |_ ___ _ __
+|  __\ \ / / _ \| |\/| |/ _` / __| __/ _ \ '__|
+| |___\ V / (_) | |  | | (_| \__ \ ||  __/ |
+\____/ \_/ \___/\_|  |_/\__,_|___/\__\___|_|
+
+                    [0m
+* EvoMaster version: 1.2.2-SNAPSHOT
+* The option to turn on Executive Summary is only meaningful when clustering is turned on (--testSuiteSplitType CLUSTERING). The option has been deactivated for this run, to prevent a crash.
+09:28:20.463 [main] WARN  org.evomaster.core.EMConfig - Using deprecated option 'testSuiteFileName'
+* The option to turn on Executive Summary is only meaningful when clustering is turned on (--testSuiteSplitType CLUSTERING). The option has been deactivated for this run, to prevent a crash.
+09:28:20.501 [main] WARN  org.evomaster.core.EMConfig - Using deprecated option 'testSuiteFileName'
+* The option to turn on Executive Summary is only meaningful when clustering is turned on (--testSuiteSplitType CLUSTERING). The option has been deactivated for this run, to prevent a crash.
+09:28:21.326 [main] WARN  org.evomaster.core.EMConfig - Using deprecated option 'testSuiteFileName'
+09:28:29.148 [main] WARN  o.e.c.p.graphql.GraphQLActionBuilder - Depth not supported yet FullType(kind=OBJECT, name=GeoPolygon, fields=[__Field(name=type, args=[], type=TypeRef(kind=NON_NULL, name=null, ofType=ofType(name=String, kind=SCALAR, ofType=null)), isDeprecated=false, deprecationReason=null), __Field(name=coordinates, args=[], type=TypeRef(kind=NON_NULL, name=null, ofType=ofType(name=null, kind=LIST, ofType=ofType(name=null, kind=LIST, ofType=ofType(name=null, kind=LIST, ofType=ofType(name=null, kind=LIST, ofType=ofType(name=Float, kind=SCALAR, ofType=null)))))), isDeprecated=false, deprecationReason=null)], inputFields=null, interfaces=[], enumValues=null, possibleTypes=null)
+* Starting to generate test cases
+09:31:37.013 [main] WARN  o.e.c.s.service.SearchTimeController - The SUT sent a 'Connection: close' HTTP header. This should be avoided, if possible
+* Going to save 21 tests to C:/Users/asmab/codes/EAST-papers/2022/icst-graphql/scripts/gqlbb1/tests/bahnql-herokuapp
+09:51:25.826 [main] WARN  o.e.c.o.service.HttpWsTestCaseWriter - Currently no assertions are generated for response type: text/html;charset=utf-8
+* Evaluated tests: 190
+* Evaluated actions: 1009
+* Needed budget: 94%
+* Passed time (seconds): 1376
+* Execution time per test (ms): Avg=7237.73 , min=176.00 , max=71030.00
+* Computation overhead between tests (ms): Avg=6.53 , min=0.00 , max=95.00
+* TCP timeouts: 5
+* EvoMaster process has completed successfully
+* Use [32m--help[0m and visit [34mhttp://www.evomaster.org[0m to learn more about available options

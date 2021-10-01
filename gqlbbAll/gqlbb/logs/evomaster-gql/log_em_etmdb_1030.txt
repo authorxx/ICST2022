@@ -1,0 +1,59 @@
+* [34m
+ _____          ___  ___          _
+|  ___|         |  \/  |         | |
+| |____   _____ | .  . | __ _ ___| |_ ___ _ __
+|  __\ \ / / _ \| |\/| |/ _` / __| __/ _ \ '__|
+| |___\ V / (_) | |  | | (_| \__ \ ||  __/ |
+\____/ \_/ \___/\_|  |_/\__,_|___/\__\___|_|
+
+                    [0m
+* EvoMaster version: 1.2.2-SNAPSHOT
+* The option to turn on Executive Summary is only meaningful when clustering is turned on (--testSuiteSplitType CLUSTERING). The option has been deactivated for this run, to prevent a crash.
+23:26:37.585 [main] WARN  org.evomaster.core.EMConfig - Using deprecated option 'testSuiteFileName'
+* The option to turn on Executive Summary is only meaningful when clustering is turned on (--testSuiteSplitType CLUSTERING). The option has been deactivated for this run, to prevent a crash.
+23:26:37.659 [main] WARN  org.evomaster.core.EMConfig - Using deprecated option 'testSuiteFileName'
+* The option to turn on Executive Summary is only meaningful when clustering is turned on (--testSuiteSplitType CLUSTERING). The option has been deactivated for this run, to prevent a crash.
+23:26:39.667 [main] WARN  org.evomaster.core.EMConfig - Using deprecated option 'testSuiteFileName'
+* Starting to generate test cases
+* [31m[ERROR] [0m[33mEvoMaster process terminated abruptly. This is likely a bug in EvoMaster. Please copy&paste the following stacktrace, and create a new issue on [34mhttps://github.com/EMResearch/EvoMaster/issues[0m[0m
+javax.ws.rs.ProcessingException: java.net.SocketException: Connection reset
+	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:267)
+	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:297)
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:630)
+	at org.glassfish.jersey.client.JerseyInvocation.call(JerseyInvocation.java:665)
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$runInScope$3(JerseyInvocation.java:659)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:390)
+	at org.glassfish.jersey.client.JerseyInvocation.runInScope(JerseyInvocation.java:659)
+	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:629)
+	at org.evomaster.core.problem.graphql.service.GraphQLFitness.handleGraphQLCall(GraphQLFitness.kt:285)
+	at org.evomaster.core.problem.graphql.service.GraphQLBlackBoxFitness.doCalculateCoverage(GraphQLBlackBoxFitness.kt:45)
+	at org.evomaster.core.problem.graphql.service.GraphQLBlackBoxFitness.doCalculateCoverage(GraphQLBlackBoxFitness.kt:15)
+	at org.evomaster.core.search.service.FitnessFunction.calculateCoverage(FitnessFunction.kt:59)
+	at org.evomaster.core.search.service.FitnessFunction.calculateCoverage$default(FitnessFunction.kt:46)
+	at org.evomaster.core.search.algorithms.RandomAlgorithm.search(RandomAlgorithm.kt:25)
+	at org.evomaster.core.Main$Companion.run(Main.kt:384)
+	at org.evomaster.core.Main$Companion.initAndRun(Main.kt:150)
+	at org.evomaster.core.Main$Companion.main(Main.kt:74)
+	at org.evomaster.core.Main.main(Main.kt)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:990)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1388)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1416)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1400)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:559)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:846)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:678)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1593)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:352)
+	at org.glassfish.jersey.client.internal.HttpUrlConnector._apply(HttpUrlConnector.java:376)
+	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:265)
+	... 20 common frames omitted

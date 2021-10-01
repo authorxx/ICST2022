@@ -1,0 +1,28 @@
+* [34m
+ _____          ___  ___          _
+|  ___|         |  \/  |         | |
+| |____   _____ | .  . | __ _ ___| |_ ___ _ __
+|  __\ \ / / _ \| |\/| |/ _` / __| __/ _ \ '__|
+| |___\ V / (_) | |  | | (_| \__ \ ||  __/ |
+\____/ \_/ \___/\_|  |_/\__,_|___/\__\___|_|
+
+                    [0m
+* EvoMaster version: 1.2.2-SNAPSHOT
+* The option to turn on Executive Summary is only meaningful when clustering is turned on (--testSuiteSplitType CLUSTERING). The option has been deactivated for this run, to prevent a crash.
+10:10:13.905 [main] WARN  org.evomaster.core.EMConfig - Using deprecated option 'testSuiteFileName'
+* The option to turn on Executive Summary is only meaningful when clustering is turned on (--testSuiteSplitType CLUSTERING). The option has been deactivated for this run, to prevent a crash.
+10:10:13.940 [main] WARN  org.evomaster.core.EMConfig - Using deprecated option 'testSuiteFileName'
+* The option to turn on Executive Summary is only meaningful when clustering is turned on (--testSuiteSplitType CLUSTERING). The option has been deactivated for this run, to prevent a crash.
+10:10:14.598 [main] WARN  org.evomaster.core.EMConfig - Using deprecated option 'testSuiteFileName'
+10:10:17.583 [main] WARN  o.e.core.search.StructuralElement - class org.evomaster.core.search.gene.OptionalGene should have a parent but currently it is null
+* Starting to generate test cases
+* Going to save 20 tests to C:/Users/asmab/codes/EAST-papers/2022/icst-graphql/scripts/gqlbb3/tests/catalysis-hub
+* Evaluated tests: 174
+* Evaluated actions: 1006
+* Needed budget: 96%
+* Passed time (seconds): 5375
+* Execution time per test (ms): Avg=30880.86 , min=286.00 , max=338921.00
+* Computation overhead between tests (ms): Avg=10.01 , min=1.00 , max=101.00
+* TCP timeouts: 166
+* EvoMaster process has completed successfully
+* Use [32m--help[0m and visit [34mhttp://www.evomaster.org[0m to learn more about available options

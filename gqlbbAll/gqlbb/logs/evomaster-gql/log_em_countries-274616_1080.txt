@@ -1,0 +1,27 @@
+* [34m
+ _____          ___  ___          _
+|  ___|         |  \/  |         | |
+| |____   _____ | .  . | __ _ ___| |_ ___ _ __
+|  __\ \ / / _ \| |\/| |/ _` / __| __/ _ \ '__|
+| |___\ V / (_) | |  | | (_| \__ \ ||  __/ |
+\____/ \_/ \___/\_|  |_/\__,_|___/\__\___|_|
+
+                    [0m
+* EvoMaster version: 1.2.2-SNAPSHOT
+* The option to turn on Executive Summary is only meaningful when clustering is turned on (--testSuiteSplitType CLUSTERING). The option has been deactivated for this run, to prevent a crash.
+23:26:37.836 [main] WARN  org.evomaster.core.EMConfig - Using deprecated option 'testSuiteFileName'
+* The option to turn on Executive Summary is only meaningful when clustering is turned on (--testSuiteSplitType CLUSTERING). The option has been deactivated for this run, to prevent a crash.
+23:26:37.942 [main] WARN  org.evomaster.core.EMConfig - Using deprecated option 'testSuiteFileName'
+* The option to turn on Executive Summary is only meaningful when clustering is turned on (--testSuiteSplitType CLUSTERING). The option has been deactivated for this run, to prevent a crash.
+23:26:40.130 [main] WARN  org.evomaster.core.EMConfig - Using deprecated option 'testSuiteFileName'
+* Starting to generate test cases
+* Going to save 15 tests to C:/Users/asmab/codes/EAST-papers/2022/icst-graphql/scripts/gqlbb/tests/countries-274616
+* Evaluated tests: 166
+* Evaluated actions: 1005
+* Needed budget: 95%
+* Passed time (seconds): 1483
+* Execution time per test (ms): Avg=8929.77 , min=84.00 , max=39960.00
+* Computation overhead between tests (ms): Avg=4.65 , min=1.00 , max=48.00
+* TCP timeouts: 19
+* EvoMaster process has completed successfully
+* Use [32m--help[0m and visit [34mhttp://www.evomaster.org[0m to learn more about available options
