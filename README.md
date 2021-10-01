@@ -2,7 +2,7 @@
 
 In this package, we provide necessary information for replicating the experiment in the paper. We provide:
 
-For Black-Box experiments:
+## Black-Box experiments
 
 jar: runnable jar for EvoMaster.
 
@@ -37,12 +37,39 @@ scripts: containing all the generated scripts,
 tests: containing the automatically generated tests for the twelve apis presented in the paper for the black-Box mode.
 
 
-For white-box experiments:
+## white-box experiments
 
+### run 
 jar: runnable jar for EvoMaster.
 
-petclinic source code is in: https://github.com/EMResearch/EMB
-under the repository: jdk_8_maven
+petclinic 
+- source code: `EMB/jdk_8_maven/cs/graphql/spring-petclinic-graphql`
+- Embedded EM driver: `EMB/jdk_8_maven/em/embedded/graphql/spring-petclinic-graphql/src/main/java/em/embedded/org/springframework/samples/petclinic/EmbeddedEvoMasterController.java`
+- External EM driver:`EMB/jdk_8_maven/em/external/graphql/spring-petclinic-graphql/src/main/java/em/external/org/springframework/samples/petclinic/ExternalEvoMasterController.java`
 
-patio-api source code is in: https://github.com/EMResearch/EMB
-under the repository: jdk_11_gradle
+patio-api
+- source code: `EMB/jdk_11_gradle/cs/graphql/patio-api`
+- Embedded EM driver:`EMB/jdk_11_gradle/em/embedded/graphql/patio-api/src/main/java/em/embedded/patio/EmbeddedEvoMasterController.java`
+- External EM driver:`EMB/jdk_11_gradle/em/external/graphql/patio-api/src/main/java/em/external/patio/ExternalEvoMasterController.java`
+
+Step 1: run Embedded/External EM Driver
+
+Step 2: run `evomaster.jar` with following configurations
+- `--problemType=GRAPHQL`
+- `--algorithm=` MIO or RANDOM
+- `--maxActionEvaluations=100` we use 100000 in the paper 
+- `--testSuiteFileName=EMTest` 
+- `--testSuiteSplitType=NONE`
+- `--writeStatistics=true --snapshotInterval=5`
+
+in the root, you will get 
+- `EMTest.java` is a generated test
+- `statistics.csv` contains statistics info (like coverage targets, covered lines) for the generation
+- `snapshot.csv` contains snapshot of statistics info
+
+### results
+
+In wb-results, we provide compressed all statistics and snapshot files, i.e., 30 runs with MIO and Random using 100000 HTTP calls as search budget.
+
+
+
