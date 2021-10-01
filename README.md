@@ -8,6 +8,12 @@ jar: runnable jar for EvoMaster.
 
 exp.py: a python script to build tools and all the twelve case studies
 
+results: contains compressed generated data
+
+gqlbbAll: contains all the automatically generated files including logs, reports, scripts and tests. 
+
+analyze.R: an R script to analyze results and generate table and figures in the paper.
+
 
 For white-box experiments:
 
